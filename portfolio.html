@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xml:lang="pt" lang="pt">
+
+<head>
+    <title>LogZarka Tech & Solutions</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <script language="javascript" src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="portfolio.html">PORTFÓLIO</a></li>
+            <li><a href="servicos.html">SERVIÇOS</a></li>
+            <li><a href="empresa.html">EMPRESA</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        var image1 = new Image()
+        image1.src = "img/portfolio5.jpg"
+        var image2 = new Image()
+        image2.src = "img/portfolio.jpg"
+        var image3 = new Image()
+        image3.src = "img/portfolio8.jpg"
+    </script>
+
+
+    <img src="img/figura1.jpg" width="917" height="400" name="slide" border="1" /></p>
+    <script type="text/javascript">
+        var step = 1;
+
+        function slideit() {
+            document.images.slide.src = eval("image" + step + ".src");
+            if (step < 3)
+                step++;
+            else
+                step = 1;
+            setTimeout("slideit()", 3500);
+        }
+        slideit();
+    </script>
+
+    <div id="centro2">
+        <ul>
+            <h3>LogZarka</h3>
+            <p>Empresa vem desenvolvendo APIs de cadastro</p>
+            <p>de serviços para terceiros: registros, cobranças, </p>
+            <p>folhas de pagamento etc. Além de desenvolver tecnologias </p>
+            <p>selo verde nos seus produtos: um diferencial considerável na área.
+            </p>
+        </ul>
+    </div>
+
+
+    <div id="footer">
+        LogZarka Copyright &copy; 2020. All rights reserved
+    </div>
+</body>
+
+</html>
